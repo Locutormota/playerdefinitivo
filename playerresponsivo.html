@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Responsivo</title>    
+    <link type="text/CSS" rel="stylesheet" href="CSS/style.css">
+</head>
+<header>
+   <div class="container">
+<div id="nav">
+
+        
+        
+        <div id="player">
+            <audio src="https://server14.srvsh.com.br:7320/stream/"></audio>
+            
+            <img onclick="play()" src="Img/playnovo.png" id="play" title="Ouça Agora" > &nbsp;
+            <img onclick="pause()" src="Img/pausenovo.png" id="pause" title="Ouvindo" >&nbsp;&nbsp; 
+            
+            <script>
+            {
+                
+                document.querySelector("#play").style.display = "block";
+                document.querySelector("#pause").style.display = "none";
+                
+            }
+    
+            var audio = document.querySelector("audio")
+            function pause(){
+                audio.pause();
+                document.querySelector("#pause").style.display = "none";
+                document.querySelector("#play").style.display = "block";
+                
+            }
+
+            var audio = document.querySelector("audio")
+            function play() {
+                audio.play();
+                document.querySelector("#play").style.display = "none";
+                document.querySelector("#pause").style.display = "block";
+               
+               
+               }
+            </script>
+             </header>
+
+</div>
+</div>
+</div>
+</html>
